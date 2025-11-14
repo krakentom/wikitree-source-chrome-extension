@@ -1,7 +1,8 @@
-// background.js
 chrome.action.onClicked.addListener((tab) => {
     chrome.scripting.executeScript({
         target: { tabId: tab.id },
-        files: ['content.js']
+        files: ['archives/actapublica-brno.js', 'archives/matriken-tirol.js', 'content.js']
+    }).catch((error) => {
+        console.error('Failed to inject scripts:', error);
     });
 });
