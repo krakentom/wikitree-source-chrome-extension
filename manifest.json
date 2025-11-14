@@ -1,0 +1,17 @@
+{
+    "name": "WikiTree Source",
+    "version": "1.0.0",
+    "description": "Get source for WikiTree",
+    "manifest_version": 3,
+    "author": "Tomas Kratina",
+    "action": {
+        "default_title": "WikiTree Source"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
+}
